@@ -1,0 +1,132 @@
+*{margin: 0;
+    padding: 0;}
+h1{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        color: #373737;
+    }
+nav ul li{
+        display: inline;
+        color: #dcd0c0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        justify-content: center;
+       }
+nav{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: nav;
+}
+section{
+  display: flex;
+  align-content: center;
+  grid-area: section;
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+    
+h2{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: #c0b283;
+        grid-area: h2;
+      }
+h3{
+       text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: #c0b283;
+        grid-area: h3;
+      }
+p{
+        text-align: justify;
+        color: #373737; 
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        grid-area: parrafo;
+     }
+main{
+  grid-area: main;
+}
+.div{
+  transform: scale(3);
+}
+.gradiente{
+  background-image:linear-gradient(to left, #c0b283, #dcd0c0,#f7f3ee) ;
+}
+footer{
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: #c0b283;
+        grid-area: footer;
+        height: 500px;
+      }
+.navbar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "nav nav nav nav " 
+    "h2 h2 h2 h2 h2 "
+    "section section section section "
+    "main main main main"
+    "footer footer footer footer"
+    ;
+}
+.circle{
+  width: 15px;
+  height: 15px;
+  border-radius:50px;
+  background-color: white;
+}
+.circle1, .circle2, .circle3{
+  width: 15px;
+  height: 15px;
+  border-radius:50px;
+  background-color: #c0b283;
+  margin: 20px;
+}
+.circulos:hover .circle1
+.circulos:hover .circle2
+.circulos:hover .circle3{
+  transform: translateX(400px);
+}
+
+.circle4, .circle5, .circle6{
+  width: 15px;
+  height: 15px;
+  border-radius:50px;
+  background-color: #c0b283;
+  margin: 20px;
+  transition: all 2s ease-in;
+}
+.circulos:hover .circle4
+.circulos:hover .circle5
+.circulos:hover .circle6{
+  transform: translateX(400px);
+  
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+      background-color: #ffffff; 
+    }
+  }
+@media only screen and (min-width: 320px) {
+    body {
+      background-color: #ffffff; 
+    }
+  }
